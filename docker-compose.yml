@@ -2,12 +2,9 @@ services:
   joclud_api:
     build:
       context: .
-      dockerfile: DOCKERFILE
+      dockerfile: Dockerfile
       network: host
     restart: always
-    image: joclud_api
-    expose:
-      - 80
     networks:
       - traefik
     labels:
